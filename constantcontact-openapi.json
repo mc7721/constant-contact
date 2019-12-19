@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "ConstantContact",
+        "description": "Constant Contact, Inc is an online marketing company offering email marketing, social media marketing, online survey, and event marketing tools, primarily to small businesses, nonprofit organizations, and membership associations.",
+        "termsOfService": "http:\/\/www.constantcontact.com\/uidocs\/CCSiteOwnerAgreement.jsp"
+    },
+    "servers": [
+        "httpsapi.constantcontact.com\/v2"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": []
+    }
+}
