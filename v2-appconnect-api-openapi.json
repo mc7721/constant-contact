@@ -1,0 +1,1941 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "v2 AppConnect API",
+        "description": "Use the API Tester to make API calls to a Constant Contact account. The API Tester requires an API key and an access token that grants access to data in a Constant Contact account. If you have forgotten or do not have a token, click the Get Access Token button below. API for managing contacts, lists, email and event campaigns, and other Contant Contact resources.",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "httpapi.constantcontact.com\/"
+    ],
+    "paths": {
+        "\/account\/info": {
+            "get": {
+                "summary": "Method to retrieve information about the account.",
+                "description": "",
+                "operationId": "GetaccountsummaryinformationAccountServicesmethods",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Method to retrieve information about the account.",
+                "description": "",
+                "operationId": "UpdateaccountinformationAccountServicesmethods",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/account\/verifiedemailaddresses": {
+            "get": {
+                "summary": "Method to retrieve the list of email addresses ass...",
+                "description": "Method to retrieve the list of email addresses associated with the account (not contact email addresses).",
+                "operationId": "RetrieveaccountemailaddressesAccountServicesmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Filter the response based on the email address status: CONFIRMED or UNCONFIRMED"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Method to create a new email address associated wi...",
+                "description": "Method to create a new email address associated with the account (not a contact email addresses).",
+                "operationId": "AddanaccountemailaddressesAccountServicesmethods",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts": {
+            "get": {
+                "summary": "Method for retrieving a list of contacts.",
+                "description": "",
+                "operationId": "GetContactsContactmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "Search for a  contact by email address"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Filter the response based on the email address status: CONFIRMED or UNCONFIRMED"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "modified_since",
+                        "in": "query",
+                        "description": "Retrieve only contacts modified since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Method for adding a Contact to a collection.",
+                "description": "",
+                "operationId": "AddaContacttothecollectionContactmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "action_by",
+                        "in": "query",
+                        "description": "Can be ACTION_BY_OWNER or ACTION_BY_VISITOR"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts\/{contactId}": {
+            "get": {
+                "summary": "Method for returning a particular Contact using a ...",
+                "description": "Method for returning a particular Contact using a contact ID.",
+                "operationId": "RetrieveacontactwithaspecifiedContactIDContactmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Modify a particular contact.",
+                "description": "",
+                "operationId": "ModifyacontactwithspecificContactIDContactmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    },
+                    {
+                        "name": "action_by",
+                        "in": "query",
+                        "description": "Can be ACTION_BY_OWNER or ACTION_BY_VISITOR"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Deleting a Contact with a particular contactID.",
+                "description": "",
+                "operationId": "DeleteacontactwithaspecificcontactIDContactmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/lists": {
+            "get": {
+                "summary": "This collection method returns a list of ContactLi...",
+                "description": "This collection method returns a list of ContactLists.",
+                "operationId": "RetrieveacollectionofContactListsContactListmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "modified_since",
+                        "in": "query",
+                        "description": "Retrieve only contacts modified since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Method to create a ContactList.",
+                "description": "",
+                "operationId": "CreateaContactListContactListmethods",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/lists\/{listId}": {
+            "get": {
+                "summary": "Method to retrieve a ContactList specified by list...",
+                "description": "Method to retrieve a ContactList specified by listId.",
+                "operationId": "RetrieveaContactListspecifiedbyalistIdContactListmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listId",
+                        "in": "path",
+                        "description": "List ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Modify a ContactList",
+                "description": "",
+                "operationId": "ModifyaContactListContactListmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listId",
+                        "in": "path",
+                        "description": "List ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a ContactList",
+                "description": "",
+                "operationId": "DeleteaContactListContactListmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listId",
+                        "in": "path",
+                        "description": "List ID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/lists\/{listId}\/contacts": {
+            "get": {
+                "summary": "This method returns a collection of contacts assoc...",
+                "description": "This method returns a collection of contacts associated with a ContactList",
+                "operationId": "RetrieveacollectionofcontactsfromaContactListContactListmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listId",
+                        "in": "path",
+                        "description": "List ID"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "modified_since",
+                        "in": "query",
+                        "description": "Retrieve only contacts modified since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts\/{contactId}\/tracking": {
+            "get": {
+                "summary": "Method for getting all activities for a Contact",
+                "description": "",
+                "operationId": "ContacttrackingsummaryreportContactTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts\/{contactId}\/tracking\/reports\/summaryByCampaign": {
+            "get": {
+                "summary": "Method for getting all activities sorted by campai...",
+                "description": "Method for getting all activities sorted by campaign",
+                "operationId": "ContacttrackingsummarybyemailcampaignContactTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts\/{contactId}\/tracking\/bounces": {
+            "get": {
+                "summary": "Get a list of all bounce activities for the contac...",
+                "description": "Get a list of all bounce activities for the contact",
+                "operationId": "ContacttrackingbouncesContactTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts\/{contactId}\/tracking\/clicks": {
+            "get": {
+                "summary": "Get a list of all click activities for the Contact...",
+                "description": "Get a list of all click activities for the Contact",
+                "operationId": "ContacttrackingclicksContactTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts\/{contactId}\/tracking\/forwards": {
+            "get": {
+                "summary": "Get a list of all forward activities for the Conta...",
+                "description": "Get a list of all forward activities for the Contact",
+                "operationId": "ContacttrackingforwardsContactTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts\/{contactId}\/tracking\/opens": {
+            "get": {
+                "summary": "Get a list of all open activities for the Contact",
+                "description": "",
+                "operationId": "ContacttrackingopensContactTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts\/{contactId}\/tracking\/sends": {
+            "get": {
+                "summary": "Get a list of all send activities for the Contact",
+                "description": "",
+                "operationId": "ContacttrackingsendContactTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/contacts\/{contactId}\/tracking\/unsubscribes": {
+            "get": {
+                "summary": "Get a list of all unsubscribe activities for the C...",
+                "description": "Get a list of all unsubscribe activities for the Contact",
+                "operationId": "ContacttrackingunsubscribesContactTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contactId",
+                        "in": "path",
+                        "description": "Specifies the contact to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns": {
+            "get": {
+                "summary": "This collection method returns a list of email cam...",
+                "description": "This collection method returns a list of email campaigns.",
+                "operationId": "RetrievealistofemailcampaignsEmailCampaignmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Filter the response based on the email address status: CONFIRMED or UNCONFIRMED"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "modified_since",
+                        "in": "query",
+                        "description": "Retrieve only contacts modified since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Method to create a Email Campaign.",
+                "description": "",
+                "operationId": "CreateanemailcampaignEmailCampaignmethods",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}": {
+            "get": {
+                "summary": "Method to retrieve a Email Campaign specified by c...",
+                "description": "Method to retrieve a Email Campaign specified by campaignId",
+                "operationId": "RetrieveacampaignspecifiedbythecampaignIdEmailCampaignmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Method to retrieve a Email Campaign specified by c...",
+                "description": "Method to retrieve a Email Campaign specified by campaignId",
+                "operationId": "ModifyanexistingemailcampaignspecifiedbythecampaignIdEmailCampaignmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Method to retrieve a Email Campaign specified by c...",
+                "description": "Method to retrieve a Email Campaign specified by campaignId",
+                "operationId": "DeleteacampaignspecifiedbythecampaignIdEmailCampaignmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/preview": {
+            "get": {
+                "summary": "Retrieve a preview of an email campaign specified ...",
+                "description": "Retrieve a preview of an email campaign specified by campaignId",
+                "operationId": "RetrieveapreviewofspecificemailcampaignEmailCampaignmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/tests": {
+            "post": {
+                "summary": "Method for test sending a campaign.",
+                "description": "",
+                "operationId": "TestsendaCampaignEmailCampaignTestSendmethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/tracking\/bounces": {
+            "get": {
+                "summary": "Get a list of all bounce activities",
+                "description": "",
+                "operationId": "CampaigntrackingbouncesEmailCampaignTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/tracking\/clicks": {
+            "get": {
+                "summary": "Get a list of all click activities",
+                "description": "",
+                "operationId": "EmailcampaigntrackingclicksEmailCampaignTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/tracking\/forwards": {
+            "get": {
+                "summary": "Get a list of all forward activities",
+                "description": "",
+                "operationId": "EmailcampaigntrackingforwardsEmailCampaignTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/tracking\/opens": {
+            "get": {
+                "summary": "Get a list of all open activities",
+                "description": "",
+                "operationId": "EmailcampaigntrackingopensEmailCampaignTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/tracking\/sends": {
+            "get": {
+                "summary": "Get a list of all send activities",
+                "description": "",
+                "operationId": "EmailcampaigntrackingsendsEmailCampaignTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/tracking\/reports\/summary": {
+            "get": {
+                "summary": "Get a summary of all activities for an email campa...",
+                "description": "Get a summary of all activities for an email campaign",
+                "operationId": "EmailcampaigntrackingsummaryEmailCampaignTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/tracking\/unsubscribes": {
+            "get": {
+                "summary": "Get a list of all unsubscribe activity for an emai...",
+                "description": "Get a list of all unsubscribe activity for an email campaign",
+                "operationId": "EmailcampaigntrackingunsubscribesEmailCampaignTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/tracking\/clicks\/{linkId}": {
+            "get": {
+                "summary": "Get a list of all the opt-out activities",
+                "description": "",
+                "operationId": "EmailcampaigntrackinglinkclicksEmailCampaignTrackingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "linkId",
+                        "in": "path",
+                        "description": "Specifies the link to retrieve data for"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "created_since",
+                        "in": "query",
+                        "description": "Retrieve activities created since the time specified (in ISO-8601 format)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/schedules": {
+            "get": {
+                "summary": "This collection method returns a list of schedules...",
+                "description": "This collection method returns a list of schedules for a campaign.",
+                "operationId": "RetrieveallschedulesforacampaignEmailCampaignSchedulingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "summary": "This is a method for creating an email campaign sc...",
+                "description": "This is a method for creating an email campaign schedule.",
+                "operationId": "CreateanemailcampaignscheduleEmailCampaignSchedulingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/emailmarketing\/campaigns\/{campaignId}\/schedules\/{scheduleId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "RetrieveaspecificemailcampaignscheduleEmailCampaignSchedulingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "scheduleId",
+                        "in": "path",
+                        "description": "Specifies the schedule to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "",
+                "operationId": "ModifyanexistingemailcampaignscheduleEmailCampaignSchedulingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "scheduleId",
+                        "in": "path",
+                        "description": "Specifies the schedule to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "This method deletes an existing schedule for an em...",
+                "description": "This method deletes an existing schedule for an email campaign.",
+                "operationId": "DeleteanemailcampaignscheduleEmailCampaignSchedulingmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "description": "Unique ID of the campaign to retrieve"
+                    },
+                    {
+                        "name": "scheduleId",
+                        "in": "path",
+                        "description": "Specifies the schedule to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events": {
+            "get": {
+                "summary": "Retrieve all EventSpot events in the account",
+                "description": "",
+                "operationId": "RetrievethecollectionofeventsEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a new EventSpot event",
+                "description": "",
+                "operationId": "CreateaneweventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}": {
+            "get": {
+                "summary": "Retrieve a specific event",
+                "description": "",
+                "operationId": "GETanIndividualEventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Modify an existing event",
+                "description": "",
+                "operationId": "ModifyanEventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "patch": {
+                "summary": "Publish or Cancel an existing event using PATCH",
+                "description": "",
+                "operationId": "PublishorCancelanEventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/fees": {
+            "get": {
+                "summary": "Retrieve all fees for an existing event",
+                "description": "",
+                "operationId": "GetAllFeesforanEventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a new fee for an EventSpot event",
+                "description": "",
+                "operationId": "CreateanewfeeEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/fees\/{feeId}": {
+            "get": {
+                "summary": "Retrieve an existing fee for a specific event",
+                "description": "",
+                "operationId": "GetaspecificFeeforanEventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "feeId",
+                        "in": "path",
+                        "description": "Unique ID of the fee you are retrieving"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Modify an existing event fee",
+                "description": "",
+                "operationId": "ModifyaFeeEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "feeId",
+                        "in": "path",
+                        "description": "Unique ID of the fee you are retrieving"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete an existing event fee",
+                "description": "",
+                "operationId": "DeleteaFeeEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "feeId",
+                        "in": "path",
+                        "description": "Unique ID of the fee you are retrieving"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/registrants": {
+            "get": {
+                "summary": "Retrieve all registrants for an existing event",
+                "description": "",
+                "operationId": "GetAllRegistrantsforanEventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/registrants\/{registrantId}": {
+            "get": {
+                "summary": "Retrieve details for a specific event registrant",
+                "description": "",
+                "operationId": "GetdetailsforaspecificRegistrantEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "registrantId",
+                        "in": "path",
+                        "description": "Unique ID of the registrant you are retrieving"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/promocodes": {
+            "get": {
+                "summary": "Retrieve all promocodes for the specified event",
+                "description": "",
+                "operationId": "RetrieveallPromocodesforaneventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a new promocode for the specified event",
+                "description": "",
+                "operationId": "CreateanewpromocodeforaneventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/promocodes\/{promocodeId}": {
+            "get": {
+                "summary": "Retrieve a specific promocode for an event",
+                "description": "",
+                "operationId": "RetrieveanindividualPromocodeforaneventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "promocodeId",
+                        "in": "path",
+                        "description": "Unique ID for the promocode"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Modify an existing promocode for the specified eve...",
+                "description": "Modify an existing promocode for the specified event",
+                "operationId": "ModifyanindividualPromocodeforaneventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "promocodeId",
+                        "in": "path",
+                        "description": "Unique ID for the promocode"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete an existing promocode for the specified eve...",
+                "description": "Delete an existing promocode for the specified event",
+                "operationId": "DeleteaneventpromocodeEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "promocodeId",
+                        "in": "path",
+                        "description": "Unique ID for the promocode"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/items": {
+            "post": {
+                "summary": "Create a new item for an event.",
+                "description": "",
+                "operationId": "CreateaneweventitemEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "get": {
+                "summary": "Retrieve all existing items for a specific event",
+                "description": "",
+                "operationId": "RetrieveallitemsforaneventEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/items\/{itemId}": {
+            "get": {
+                "summary": "Retrieve a specific item for an event",
+                "description": "",
+                "operationId": "RetrieveaneventitemEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "itemId",
+                        "in": "path",
+                        "description": "Unique ID of the item to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Make changes to a specific item for an event",
+                "description": "",
+                "operationId": "UpdateaneventitemEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "itemId",
+                        "in": "path",
+                        "description": "Unique ID of the item to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete an existing event item",
+                "description": "",
+                "operationId": "DeleteaneventitemEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "itemId",
+                        "in": "path",
+                        "description": "Unique ID of the item to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes": {
+            "post": {
+                "summary": "Create a new attribute for an item.",
+                "description": "",
+                "operationId": "CreateanewitemattributeEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "itemId",
+                        "in": "path",
+                        "description": "Unique ID of the item to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "get": {
+                "summary": "Retrieve all existing attributes for a specific it...",
+                "description": "Retrieve all existing attributes for a specific item",
+                "operationId": "RetrieveallattibutesforanitemEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "itemId",
+                        "in": "path",
+                        "description": "Unique ID of the item to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes\/{attributeId}": {
+            "get": {
+                "summary": "Retrieve an existing item attribute",
+                "description": "",
+                "operationId": "RetrieveanitemattributeEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "itemId",
+                        "in": "path",
+                        "description": "Unique ID of the item to retrieve"
+                    },
+                    {
+                        "name": "attributeId",
+                        "in": "path",
+                        "description": "Unique ID of the attribute to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Make changes to a specific item attribute",
+                "description": "",
+                "operationId": "UpdateanitemattributeEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "itemId",
+                        "in": "path",
+                        "description": "Unique ID of the item to retrieve"
+                    },
+                    {
+                        "name": "attributeId",
+                        "in": "path",
+                        "description": "Unique ID of the attribute to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete an existing item attribute",
+                "description": "",
+                "operationId": "DeleteanitemattributeEventSpotEventmethods",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specifies the event to retrieve"
+                    },
+                    {
+                        "name": "itemId",
+                        "in": "path",
+                        "description": "Unique ID of the item to retrieve"
+                    },
+                    {
+                        "name": "attributeId",
+                        "in": "path",
+                        "description": "Unique ID of the attribute to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/library\/info": {
+            "get": {
+                "summary": "Retrieve MyLibrary usage information",
+                "description": "",
+                "operationId": "MyLibraryusageinformationMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/library\/folders": {
+            "get": {
+                "summary": "Retrieve the account's MyLibrary folder collection...",
+                "description": "Retrieve the account's MyLibrary folder collection.",
+                "operationId": "RetrievethecollectionofMyLibraryfoldersMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "sort_by",
+                        "in": "query",
+                        "description": "sort folder list by CREATED_DATE, CREATED_DATE_DESC, MODIFIED_DATE, MODIFIED_DATE_DESC, NAME, NAME_DESC"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a new MyLibrary folder.",
+                "description": "",
+                "operationId": "CreateaMyLibraryfolderMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/library\/folders\/{folderId}": {
+            "get": {
+                "summary": "Retrieve a specific MyLibrary folder",
+                "description": "",
+                "operationId": "RetrieveanIndividualMyLibraryFolderMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folderId",
+                        "in": "path",
+                        "description": "Specifies the folder to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update an existing MyLibrary folder",
+                "description": "",
+                "operationId": "UpdateanIndividualMyLibraryFolderMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folderId",
+                        "in": "path",
+                        "description": "Specifies the folder to retrieve"
+                    },
+                    {
+                        "name": "include_payload",
+                        "in": "query",
+                        "description": "Choose whether or not to return the updated folder JSON payload"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete an existing MyLibrary folder",
+                "description": "",
+                "operationId": "DeleteanIndividualMyLibraryFolderMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folderId",
+                        "in": "path",
+                        "description": "Specifies the folder to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/library\/folders\/trash\/files": {
+            "get": {
+                "summary": "Retrieve files in the Trash folder",
+                "description": "",
+                "operationId": "RetrievefilesintheTrashfolderMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Specifies the type of files to retrieve, ALL, IMAGES, or DOCUMENTS"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "sort_by",
+                        "in": "query",
+                        "description": "sort folder list by CREATED_DATE, CREATED_DATE_DESC, MODIFIED_DATE, MODIFIED_DATE_DESC, NAME, NAME_DESC"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete all files in the Trash folder",
+                "description": "",
+                "operationId": "DeletefilesintheTrashfolderMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/library\/files": {
+            "get": {
+                "summary": "Retrieve the account's MyLibrary folder collection...",
+                "description": "Retrieve the account's MyLibrary folder collection.",
+                "operationId": "RetrievetheCollectionofMyLibraryfilesMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Specifies the type of files to retrieve, ALL, IMAGES, or DOCUMENTS"
+                    },
+                    {
+                        "name": "source",
+                        "in": "query",
+                        "description": "Specifies to retrieve files from a particular source: ALL, MyComputer, Facebook, Instagram, Shutterstock, or  Mobile"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/library\/folders\/{folderId}\/files": {
+            "get": {
+                "summary": "Retrieve a collection of files from a specific MyL...",
+                "description": "Retrieve a collection of files from a specific MyLibrary folder.",
+                "operationId": "RetrieveaCollectionofMyLibraryFilesfromaFolderMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folderId",
+                        "in": "path",
+                        "description": "Specifies the folder to retrieve"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of contacts to return per page, 1-500, default 50"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Specifies the type of files to retrieve, ALL, IMAGES, or DOCUMENTS"
+                    },
+                    {
+                        "name": "source",
+                        "in": "query",
+                        "description": "Specifies to retrieve files from a particular source: ALL, MyComputer, Facebook, Instagram, Shutterstock, or  Mobile"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Move one or more MyLibrary Files to a Specified Fo...",
+                "description": "Move one or more MyLibrary Files to a Specified Folder.",
+                "operationId": "MoveMyLibraryFilesMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folderId",
+                        "in": "path",
+                        "description": "Specifies the folder to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/library\/files\/{fileId}": {
+            "get": {
+                "summary": "Retrieve a specific MyLibrary file",
+                "description": "",
+                "operationId": "RetrieveanIndividualMyLibraryFileMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fileId",
+                        "in": "path",
+                        "description": "Specifies the file to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update an existing MyLibrary file",
+                "description": "",
+                "operationId": "UpdateanIndividualMyLibraryFileMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fileId",
+                        "in": "path",
+                        "description": "Specifies the file to retrieve"
+                    },
+                    {
+                        "name": "include_payload",
+                        "in": "query",
+                        "description": "Choose whether or not to return the updated folder JSON payload"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete an existing MyLibrary file",
+                "description": "",
+                "operationId": "DeleteanIndividualMyLibraryFileMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fileId",
+                        "in": "path",
+                        "description": "Specifies the file to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/library\/files\/uploadstatus\/{fileId}": {
+            "get": {
+                "summary": "Get the status of one or more file upload activiti...",
+                "description": "Get the status of one or more file upload activities.",
+                "operationId": "RetrieveMyLibraryFileUploadStatusReportMyLibrarymethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fileId",
+                        "in": "path",
+                        "description": "Specifies the file to retrieve"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
