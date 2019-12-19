@@ -1,0 +1,229 @@
+{
+    "name": "Constant Contact",
+    "description": "With Constant Contact, you can create effective email marketing and other online marketing campaigns to meet your business goals. Start your FREE trial today!",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/171-constant-contact.jpg",
+    "tags": [
+        "api provider",
+        "crm",
+        "email marketing",
+        "emails",
+        "getting started example",
+        "have api",
+        "have swagger",
+        "relative data",
+        "service api",
+        "surveys",
+        "webhook implementations"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/constant-contact\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "ConstantContact",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/171-constant-contact.jpg",
+            "humanURL": "http:\/\/constantcontact.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/constantcontact-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/constantcontact.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/constantcontact-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "v2 AppConnect API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/171-constant-contact.jpg",
+            "humanURL": "http:\/\/constantcontact.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/v2-appconnect-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/v2-appconnect-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/v2-appconnect-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Constant Contact",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/171-constant-contact.jpg",
+            "humanURL": "http:\/\/constantcontact.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/constant-contact-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/constant-contact.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/constant-contact-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": ".NET LIbrary",
+            "url": "https:\/\/github.com\/constantcontact\/.net-sdk"
+        },
+        {
+            "type": "Authentication",
+            "url": "http:\/\/developer.constantcontact.com\/docs\/authentication\/authentication.html"
+        },
+        {
+            "type": "Base",
+            "url": "https:\/\/api.constantcontact.com"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/techblog.constantcontact.com\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/techblog.constantcontact.com\/feed\/"
+        },
+        {
+            "type": "Curated Source",
+            "url": "http:\/\/blogs.constantcontact.com\/mylibrary-mobile\/"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/blogs.constantcontact.com"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/constant-contact"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/constant-contact"
+        },
+        {
+            "type": "Email",
+            "url": "Webservices@constantcontact.com"
+        },
+        {
+            "type": "Email",
+            "url": "abuse@constantcontact.com"
+        },
+        {
+            "type": "Email",
+            "url": "privacy@constantcontact.com"
+        },
+        {
+            "type": "Email",
+            "url": "legal@constantcontact.com"
+        },
+        {
+            "type": "Email",
+            "url": "support@constantcontact.com"
+        },
+        {
+            "type": "Email",
+            "url": "security@constantcontact.com"
+        },
+        {
+            "type": "Email",
+            "url": "donotcall@constantcontact.com"
+        },
+        {
+            "type": "Email",
+            "url": "DMCA@constantcontact.com"
+        },
+        {
+            "type": "Forums",
+            "url": "http:\/\/developer.constantcontact.com\/forums"
+        },
+        {
+            "type": "Getting Started",
+            "url": "http:\/\/developer.constantcontact.com\/get-started.html"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/constantcontact"
+        },
+        {
+            "type": "iOS SDK",
+            "url": "https:\/\/github.com\/constantcontact\/ios-sdk"
+        },
+        {
+            "type": "Issues",
+            "url": "http:\/\/developer.constantcontact.com\/docs\/api-issues-and-status\/open-issues.html"
+        },
+        {
+            "type": "Issues",
+            "url": ""
+        },
+        {
+            "type": "Java Library",
+            "url": "https:\/\/github.com\/constantcontact\/java-sdk"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/171-2019-09-02-20-55-48.json"
+        },
+        {
+            "type": "Partners",
+            "url": "http:\/\/www.constantcontact.com\/partners\/technology"
+        },
+        {
+            "type": "PHP LIbrary",
+            "url": "https:\/\/github.com\/constantcontact\/php-sdk"
+        },
+        {
+            "type": "Pricing",
+            "url": "http:\/\/www.constantcontact.com\/pricing"
+        },
+        {
+            "type": "Ruby Library",
+            "url": "https:\/\/github.com\/constantcontact\/ruby-sdk"
+        },
+        {
+            "type": "Registration",
+            "url": "http:\/\/developer.constantcontact.com\/api-keys.html"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/constantcontact"
+        },
+        {
+            "type": "Webhooks",
+            "url": "http:\/\/developer.constantcontact.com\/docs\/partnerwebhooks\/webhooks_index.html"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/constantcontact.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/developer.constantcontact.com\/"
+        }
+    ]
+}
