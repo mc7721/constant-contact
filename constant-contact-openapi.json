@@ -1,0 +1,847 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Constant Contact",
+        "description": "Make Constant Contact's leading email and event marketing services accessible directly from your app.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.constantcontact.com\/ws\/customers\/"
+    ],
+    "paths": {
+        "\/{username}\/activities": {
+            "get": {
+                "summary": "List Activities",
+                "description": "List Activities",
+                "operationId": "ListActivities",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Activity",
+                "description": "Add Activity",
+                "operationId": "AddActivity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/activities\/{activity-id}": {
+            "get": {
+                "summary": "Get Activity",
+                "description": "Get Activity",
+                "operationId": "GetActivity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "activity",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/campaigns": {
+            "get": {
+                "summary": "List Campaigns",
+                "description": "List Campaigns",
+                "operationId": "ListCampaigns",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "refresh",
+                        "in": "query",
+                        "description": "To initiate re-calculation of campaign results, you must use refresh= true."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Campaign",
+                "description": "Add Campaign",
+                "operationId": "AddCampaign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/campaigns\/{campaign-id}": {
+            "delete": {
+                "summary": "Delete Campaign",
+                "description": "Delete Campaign",
+                "operationId": "DeleteCampaign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaign",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Campaign",
+                "description": "Get Campaign",
+                "operationId": "GetCampaign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaign",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Campaign",
+                "description": "Update Campaign",
+                "operationId": "UpdateCampaign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaign",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/campaigns\/{campaign-id}\/events\/": {
+            "get": {
+                "summary": "Get Campaign Events",
+                "description": "Get Campaign Events",
+                "operationId": "GetCampaignEvents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "campaign",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/contacts": {
+            "get": {
+                "summary": "List Contacts",
+                "description": "List Contacts",
+                "operationId": "ListContacts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "updatedsince",
+                        "in": "query",
+                        "description": "Specified date. The date has to be in UTC in the format specified by the Atom spec (i.e. 2008-07-23T14:21:06.407Z)."
+                    },
+                    {
+                        "name": "listid",
+                        "in": "query",
+                        "description": "Specific list."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Contact",
+                "description": "Add Contact",
+                "operationId": "AddContact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/contacts\/{contact-id}": {
+            "delete": {
+                "summary": "Opting-out Contact",
+                "description": "Opting-out Contact",
+                "operationId": "OptingoutContact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contact",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Contact",
+                "description": "Get Contact",
+                "operationId": "GetContact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contact",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Contact",
+                "description": "Update Contact",
+                "operationId": "UpdateContact",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contact",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/contacts\/{contact-id}\/events\/": {
+            "get": {
+                "summary": "Get Per-Contact Campaign Events",
+                "description": "Get Per-Contact Campaign Events",
+                "operationId": "GetPercontactCampaignEvents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contact",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/events": {
+            "get": {
+                "summary": "List Events",
+                "description": "List Events",
+                "operationId": "ListEvents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Event",
+                "description": "Add Event",
+                "operationId": "AddEvent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/events\/{event-id}": {
+            "get": {
+                "summary": "Get Event",
+                "description": "Get Event",
+                "operationId": "GetEvent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/events\/{event-id}\/registrants": {
+            "get": {
+                "summary": "List Registrants",
+                "description": "List Registrants",
+                "operationId": "ListRegistrants",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/events\/{event-id}\/registrants\/{registrant-id}": {
+            "get": {
+                "summary": "Get Registrant",
+                "description": "Get Registrant",
+                "operationId": "GetRegistrant",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrant",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/attendancestatus": {
+            "get": {
+                "summary": "Get Attendance Status",
+                "description": "Get Attendance Status",
+                "operationId": "GetAttendanceStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrant",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Attendance Status",
+                "description": "Update Attendance Status",
+                "operationId": "UpdateAttendanceStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrant",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/guests": {
+            "get": {
+                "summary": "Get List of Guests",
+                "description": "Get List of Guests",
+                "operationId": "GetListOfGuests",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrant",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/guests\/{guest-id}": {
+            "get": {
+                "summary": "Get Guest Details",
+                "description": "Get Guest Details",
+                "operationId": "GetGuestDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "guest",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrant",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/paymentstatus": {
+            "get": {
+                "summary": "Get Payment Status",
+                "description": "Get Payment Status",
+                "operationId": "GetPaymentStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrant",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Payment Status",
+                "description": "Update Payment Status",
+                "operationId": "UpdatePaymentStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrant",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/library\/folders": {
+            "get": {
+                "summary": "List Folders",
+                "description": "List Folders",
+                "operationId": "ListFolders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "query",
+                        "description": "Specifies Accept."
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/library\/folders\/{folder-id}\/images": {
+            "delete": {
+                "summary": "Delete All Images",
+                "description": "Delete All Images",
+                "operationId": "DeleteAllImages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folder",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "List Images",
+                "description": "List Images",
+                "operationId": "ListImages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folder",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "query",
+                        "description": "Specifies Accept."
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/library\/folders\/{folder-id}\/images\/{image-id}": {
+            "delete": {
+                "summary": "Delete Image",
+                "description": "Delete Image",
+                "operationId": "DeleteImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folder",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "image",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Image",
+                "description": "Get Image",
+                "operationId": "GetImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "folder",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "image",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "query",
+                        "description": "Specifies Accept."
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/lists": {
+            "get": {
+                "summary": "Get All Mailing Lists",
+                "description": "Get All Mailing Lists",
+                "operationId": "GetAllMailingLists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Mailing List",
+                "description": "Add Mailing List",
+                "operationId": "AddMailingList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/lists\/{list-id}": {
+            "delete": {
+                "summary": "Delete Mailing List",
+                "description": "Delete Mailing List",
+                "operationId": "DeleteMailingList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "list",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Mailing List",
+                "description": "Get Mailing List",
+                "operationId": "GetMailingList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "list",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Mailing List",
+                "description": "Update Mailing List",
+                "operationId": "UpdateMailingList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "list",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "query",
+                        "description": "Specifies Content Type."
+                    }
+                ]
+            }
+        },
+        "\/{username}\/lists\/{list-id}\/members": {
+            "get": {
+                "summary": "Get Contacts Collection from a List",
+                "description": "Get Contacts Collection from a List",
+                "operationId": "GetContactsCollectionFromAList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "list",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/settings\/emailaddresses": {
+            "get": {
+                "summary": "List Account Email Addresses",
+                "description": "List Account Email Addresses",
+                "operationId": "ListAccountEmailAddresses",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{username}\/settings\/emailaddresses\/{email-id}": {
+            "get": {
+                "summary": "Get Email Address Details",
+                "description": "Get Email Address Details",
+                "operationId": "GetEmailAddressDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
