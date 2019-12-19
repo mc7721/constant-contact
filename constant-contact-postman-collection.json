@@ -1,0 +1,1607 @@
+{
+    "id": "a57a937948fe60b316e1286aea0bcb3d",
+    "name": "Constant Contact",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "a57ac1ea8f133c740b406a041af12336",
+            "name": "List Activities",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/activities",
+            "description": "List Activities",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "23bcb17cfc1005cfcd2cb87d2bee653b",
+            "name": "Add Activity",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/activities",
+            "description": "Add Activity",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8143e7d92bf4de1f7afce25e082c2db",
+            "name": "Get Activity",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/activities\/{activity-id}",
+            "description": "Get Activity",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "activity",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "b699b4facb38e37df9b87ffcd83fa5f3",
+            "name": "List Campaigns",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/campaigns",
+            "description": "List Campaigns",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "refresh",
+                    "description": "To initiate re-calculation of campaign results, you must use refresh= true.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "92ba040b0e1b9254f1d77bcc99ef5b1c",
+            "name": "Add Campaign",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/campaigns",
+            "description": "Add Campaign",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "549884f8e4685c7f7fac3a9ded24f043",
+            "name": "Delete Campaign",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/campaigns\/{campaign-id}",
+            "description": "Delete Campaign",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaign",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "bbf14a039077ae8e4a34478519ceff4f",
+            "name": "Get Campaign",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/campaigns\/{campaign-id}",
+            "description": "Get Campaign",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaign",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "c88e1967ca4b4dd61a3a4bbf5b25f321",
+            "name": "Update Campaign",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/campaigns\/{campaign-id}",
+            "description": "Update Campaign",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaign",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "ea5a3ecf4bae32ade2c2ce1714f01917",
+            "name": "Get Campaign Events",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/campaigns\/{campaign-id}\/events\/",
+            "description": "Get Campaign Events",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaign",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "89cd0e6a789986aa3337ed2bf4c82305",
+            "name": "List Contacts",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/contacts",
+            "description": "List Contacts",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "updatedsince",
+                    "description": "Specified date. The date has to be in UTC in the format specified by the Atom spec (i.e. 2008-07-23T14:21:06.407Z).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "listid",
+                    "description": "Specific list.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "aad2289749465232795e1b33048820b5",
+            "name": "Add Contact",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/contacts",
+            "description": "Add Contact",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "68ea0c39abe13e71d6040060dc5d61fc",
+            "name": "Opting-out Contact",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/contacts\/{contact-id}",
+            "description": "Opting-out Contact",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contact",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "3e7e8666946634aac917114981871004",
+            "name": "Get Contact",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/contacts\/{contact-id}",
+            "description": "Get Contact",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contact",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "32345290156e0ddadae42bff8cc5ed2c",
+            "name": "Update Contact",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/contacts\/{contact-id}",
+            "description": "Update Contact",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contact",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "b96c3f7bad350761cc0bd46157ee3512",
+            "name": "Get Per-Contact Campaign Events",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/contacts\/{contact-id}\/events\/",
+            "description": "Get Per-Contact Campaign Events",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contact",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "d87ced9ce2c46aff57ff5ffb8e07b449",
+            "name": "List Events",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events",
+            "description": "List Events",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "34336632de2eff61a988f96c8ed7591d",
+            "name": "Add Event",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events",
+            "description": "Add Event",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "ebda60247a5076f009aa684229e1a955",
+            "name": "Get Event",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events\/{event-id}",
+            "description": "Get Event",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "6fef4983985d853a357f15cecd866aff",
+            "name": "List Registrants",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events\/{event-id}\/registrants",
+            "description": "List Registrants",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "50d0847165499ff23c9f0dd438ff72c6",
+            "name": "Get Registrant",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events\/{event-id}\/registrants\/{registrant-id}",
+            "description": "Get Registrant",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registrant",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "95a1f9ea0272aca21a3d8972e7c7e47d",
+            "name": "Get Attendance Status",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/attendancestatus",
+            "description": "Get Attendance Status",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registrant",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec90cbec09dff2828fdd89094afacaa8",
+            "name": "Update Attendance Status",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/attendancestatus",
+            "description": "Update Attendance Status",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registrant",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "1bbe292508454bfeec97bbe02bd05ba5",
+            "name": "Get List of Guests",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/guests",
+            "description": "Get List of Guests",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registrant",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "d6ae732f9f500f9759301669f87dfec2",
+            "name": "Get Guest Details",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/guests\/{guest-id}",
+            "description": "Get Guest Details",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "guest",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registrant",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "4a455a0b51a201941ec8e7f0193d34db",
+            "name": "Get Payment Status",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/paymentstatus",
+            "description": "Get Payment Status",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registrant",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "12e0dcfff76f74014d446ed6634c12d3",
+            "name": "Update Payment Status",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/events\/{event-id}\/registrants\/{registrant-id}\/paymentstatus",
+            "description": "Update Payment Status",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registrant",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "e3812ea149ec6df3f6c67fb3a0d1ecfb",
+            "name": "List Folders",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/library\/folders",
+            "description": "List Folders",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Specifies Accept.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "db42a53dda6c7c3b74c137ddee40e12a",
+            "name": "Delete All Images",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/library\/folders\/{folder-id}\/images",
+            "description": "Delete All Images",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folder",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "de56b36dc499a5b118c41d552872a45d",
+            "name": "List Images",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/library\/folders\/{folder-id}\/images",
+            "description": "List Images",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folder",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Specifies Accept.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "9d6f5107480fc9ae768cccc8981147e0",
+            "name": "Delete Image",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/library\/folders\/{folder-id}\/images\/{image-id}",
+            "description": "Delete Image",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folder",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "image",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "a039f9d8dc947966a318e74caa2a1f3b",
+            "name": "Get Image",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/library\/folders\/{folder-id}\/images\/{image-id}",
+            "description": "Get Image",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folder",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "image",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Specifies Accept.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "c26b4c33b08685774c489db123ee836f",
+            "name": "Get All Mailing Lists",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/lists",
+            "description": "Get All Mailing Lists",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "78b2e6709cb6dfc8b205239018642e59",
+            "name": "Add Mailing List",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/lists",
+            "description": "Add Mailing List",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "57758e271b5057c2c567e90cf31abf93",
+            "name": "Delete Mailing List",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/lists\/{list-id}",
+            "description": "Delete Mailing List",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "list",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "30c62082278c027560d8eae8fee9f25a",
+            "name": "Get Mailing List",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/lists\/{list-id}",
+            "description": "Get Mailing List",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "list",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "6c12b3411ab90aeec99693c38f278c5f",
+            "name": "Update Mailing List",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/lists\/{list-id}",
+            "description": "Update Mailing List",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "list",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "Specifies Content Type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "e4b1fe04393b9ec1094641a0e8503743",
+            "name": "Get Contacts Collection from a List",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/lists\/{list-id}\/members",
+            "description": "Get Contacts Collection from a List",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "list",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "350a712e2ac2b851a125bea8ee22a29d",
+            "name": "List Account Email Addresses",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/settings\/emailaddresses",
+            "description": "List Account Email Addresses",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        },
+        {
+            "id": "eb0c19179b4c892631a825b4c2d33218",
+            "name": "Get Email Address Details",
+            "url": "httpsapi.constantcontact.com\/ws\/customers\/\/{username}\/settings\/emailaddresses\/{email-id}",
+            "description": "Get Email Address Details",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "email",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a57a937948fe60b316e1286aea0bcb3d",
+            "rawModeData": ""
+        }
+    ]
+}
