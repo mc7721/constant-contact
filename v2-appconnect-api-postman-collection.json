@@ -1,0 +1,3066 @@
+{
+    "id": "a66b7f750321052aed9fd04fdb403b32",
+    "name": "v2 AppConnect API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "3a34447c74f5d4860c36a4172fa2c29a",
+            "name": "Method to retrieve information about the account.",
+            "url": "httpapi.constantcontact.com\/\/account\/info",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "82f141c213f51b2c91d7b083ac4efdc2",
+            "name": "Method to retrieve information about the account.",
+            "url": "httpapi.constantcontact.com\/\/account\/info",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "dccba20facff427307ac4b81908c8e06",
+            "name": "Method to retrieve the list of email addresses ass...",
+            "url": "httpapi.constantcontact.com\/\/account\/verifiedemailaddresses",
+            "description": "Method to retrieve the list of email addresses associated with the account (not contact email addresses).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "status",
+                    "description": "Filter the response based on the email address status: CONFIRMED or UNCONFIRMED",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "56773303591f66183ef74af8dc95dbb6",
+            "name": "Method to create a new email address associated wi...",
+            "url": "httpapi.constantcontact.com\/\/account\/verifiedemailaddresses",
+            "description": "Method to create a new email address associated with the account (not a contact email addresses).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "30a65a8877895fc62e9739ffaf424064",
+            "name": "Method for retrieving a list of contacts.",
+            "url": "httpapi.constantcontact.com\/\/contacts",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "email",
+                    "description": "Search for a  contact by email address",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Filter the response based on the email address status: CONFIRMED or UNCONFIRMED",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modified_since",
+                    "description": "Retrieve only contacts modified since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "acbe9f65ef1f9c101b6d75b58c18acb8",
+            "name": "Method for adding a Contact to a collection.",
+            "url": "httpapi.constantcontact.com\/\/contacts",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "action_by",
+                    "description": "Can be ACTION_BY_OWNER or ACTION_BY_VISITOR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "24e4c1bd5ad72b3d43ed9eb55bfd0056",
+            "name": "Method for returning a particular Contact using a ...",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}",
+            "description": "Method for returning a particular Contact using a contact ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "d644157748cb6b68e50dbd6b10a39a74",
+            "name": "Modify a particular contact.",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "action_by",
+                    "description": "Can be ACTION_BY_OWNER or ACTION_BY_VISITOR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "82ed4ff72c55cb5fae064ef5a0abfb19",
+            "name": "Deleting a Contact with a particular contactID.",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "0b32ccf36dbfb9a316a65dc8b054aee0",
+            "name": "This collection method returns a list of ContactLi...",
+            "url": "httpapi.constantcontact.com\/\/lists",
+            "description": "This collection method returns a list of ContactLists.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "modified_since",
+                    "description": "Retrieve only contacts modified since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "97b95d32645922c384a82a80d5514e44",
+            "name": "Method to create a ContactList.",
+            "url": "httpapi.constantcontact.com\/\/lists",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "b681397a38d9b8c47d57762751bcfdb2",
+            "name": "Method to retrieve a ContactList specified by list...",
+            "url": "httpapi.constantcontact.com\/\/lists\/{listId}",
+            "description": "Method to retrieve a ContactList specified by listId.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "listId",
+                    "description": "List ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "8f491514641f67a42f4ab0c2b50ede14",
+            "name": "Modify a ContactList",
+            "url": "httpapi.constantcontact.com\/\/lists\/{listId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "listId",
+                    "description": "List ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "7e654dd9c5175b8ca643a21c7ba4cb7e",
+            "name": "Delete a ContactList",
+            "url": "httpapi.constantcontact.com\/\/lists\/{listId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "listId",
+                    "description": "List ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "3df332228eae3730cc3eac57a6c0fff8",
+            "name": "This method returns a collection of contacts assoc...",
+            "url": "httpapi.constantcontact.com\/\/lists\/{listId}\/contacts",
+            "description": "This method returns a collection of contacts associated with a ContactList",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "listId",
+                    "description": "List ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modified_since",
+                    "description": "Retrieve only contacts modified since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "9170866aaa867f8f69689e68877c8a67",
+            "name": "Method for getting all activities for a Contact",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "c394b3976112f90a1f87d88085377d81",
+            "name": "Method for getting all activities sorted by campai...",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/reports\/summaryByCampaign",
+            "description": "Method for getting all activities sorted by campaign",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "0057772b1c1015bf7d2ed1053a73736d",
+            "name": "Get a list of all bounce activities for the contac...",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/bounces",
+            "description": "Get a list of all bounce activities for the contact",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "016304e6008555dd645fab6282667918",
+            "name": "Get a list of all click activities for the Contact...",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/clicks",
+            "description": "Get a list of all click activities for the Contact",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "0d0b905894020f3787c9740e29b8401f",
+            "name": "Get a list of all forward activities for the Conta...",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/forwards",
+            "description": "Get a list of all forward activities for the Contact",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "03b40cc2f3d40bb7de3585d27bdfa0dc",
+            "name": "Get a list of all open activities for the Contact",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/opens",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "a81547808f6f413ebb9bf4c5c2c4d14a",
+            "name": "Get a list of all send activities for the Contact",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/sends",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "04041b7df4732c83665224cf5b5de79a",
+            "name": "Get a list of all unsubscribe activities for the C...",
+            "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/unsubscribes",
+            "description": "Get a list of all unsubscribe activities for the Contact",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contactId",
+                    "description": "Specifies the contact to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "109c5d753e41c042227247faca70160a",
+            "name": "This collection method returns a list of email cam...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns",
+            "description": "This collection method returns a list of email campaigns.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "status",
+                    "description": "Filter the response based on the email address status: CONFIRMED or UNCONFIRMED",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modified_since",
+                    "description": "Retrieve only contacts modified since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7e8f3cf5a129ccb07adac6407bdbe51",
+            "name": "Method to create a Email Campaign.",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "e79b64a3e3a8ecabbb18c5ca2bc6a04e",
+            "name": "Method to retrieve a Email Campaign specified by c...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}",
+            "description": "Method to retrieve a Email Campaign specified by campaignId",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "2b486d1fa4cb210c58e2a417a1186870",
+            "name": "Method to retrieve a Email Campaign specified by c...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}",
+            "description": "Method to retrieve a Email Campaign specified by campaignId",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d3d5b2bd5e4ca5c08d22bcbb8236dbf",
+            "name": "Method to retrieve a Email Campaign specified by c...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}",
+            "description": "Method to retrieve a Email Campaign specified by campaignId",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "c1863e6ee088b561b75a40dd1823ef88",
+            "name": "Retrieve a preview of an email campaign specified ...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/preview",
+            "description": "Retrieve a preview of an email campaign specified by campaignId",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "99ccc7cf1c250501aa105b5a0552078a",
+            "name": "Method for test sending a campaign.",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tests",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "55c23794f746564fd7a67fea13312ec1",
+            "name": "Get a list of all bounce activities",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/bounces",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "d46b3cc920294d36d14ef54e6cc3b0d7",
+            "name": "Get a list of all click activities",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/clicks",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "a154571a30649558eae22a19cc0ac76f",
+            "name": "Get a list of all forward activities",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/forwards",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "ee2ac3d2aa51f3ed49a1bf0edf7745ff",
+            "name": "Get a list of all open activities",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/opens",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "7b12a7c3a07b2aaa9bc7b7699e99b64c",
+            "name": "Get a list of all send activities",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/sends",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "d104180a2dce2f15fd8249374fc4b2cd",
+            "name": "Get a summary of all activities for an email campa...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/reports\/summary",
+            "description": "Get a summary of all activities for an email campaign",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "894d4454a3391d163ff9f7156b4b05e6",
+            "name": "Get a list of all unsubscribe activity for an emai...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/unsubscribes",
+            "description": "Get a list of all unsubscribe activity for an email campaign",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e75d553550c07b6649b046a55c7e806",
+            "name": "Get a list of all the opt-out activities",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/clicks\/{linkId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "linkId",
+                    "description": "Specifies the link to retrieve data for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "created_since",
+                    "description": "Retrieve activities created since the time specified (in ISO-8601 format)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "21136578711f7221b70b075762f1b4cf",
+            "name": "This collection method returns a list of schedules...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules",
+            "description": "This collection method returns a list of schedules for a campaign.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "c6c6e61bafb459d78c2f6624fceba23f",
+            "name": "This is a method for creating an email campaign sc...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules",
+            "description": "This is a method for creating an email campaign schedule.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f2a4085cc781db38a0f3d093675a44e",
+            "name": "",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules\/{scheduleId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "scheduleId",
+                    "description": "Specifies the schedule to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "76a0b909c16f6b69b00fc7e17c7aee5d",
+            "name": "",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules\/{scheduleId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "scheduleId",
+                    "description": "Specifies the schedule to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "abbaaf17644fcf6b48fa6b8002b6b1b4",
+            "name": "This method deletes an existing schedule for an em...",
+            "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules\/{scheduleId}",
+            "description": "This method deletes an existing schedule for an email campaign.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "campaignId",
+                    "description": "Unique ID of the campaign to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "scheduleId",
+                    "description": "Specifies the schedule to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "a8d25d47fb282a0691fa4e0d4c03b328",
+            "name": "Retrieve all EventSpot events in the account",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "268b77075adb52700a8c59d38cb1e4ff",
+            "name": "Create a new EventSpot event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "7c46ad3c325a84f04ef910c5e217ac54",
+            "name": "Retrieve a specific event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "189d40a3beea6793a2752f899534938d",
+            "name": "Modify an existing event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "7799f08525d1b2365268e68a367b89b2",
+            "name": "Publish or Cancel an existing event using PATCH",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "ae56eabc097ef24ed583ae32e2ffbb2e",
+            "name": "Retrieve all fees for an existing event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed134e7fa63a520b34fe578781ae6773",
+            "name": "Create a new fee for an EventSpot event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e0f93df5f3ee570bd9e6b253fc415e9",
+            "name": "Retrieve an existing fee for a specific event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees\/{feeId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "feeId",
+                    "description": "Unique ID of the fee you are retrieving",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "4fa37b63ff31c12aa793a0cbcca506c3",
+            "name": "Modify an existing event fee",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees\/{feeId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "feeId",
+                    "description": "Unique ID of the fee you are retrieving",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "23b920b5586c58f420d3a738a4a41c23",
+            "name": "Delete an existing event fee",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees\/{feeId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "feeId",
+                    "description": "Unique ID of the fee you are retrieving",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "f10057ec2a9e931778e139f0e687fbc4",
+            "name": "Retrieve all registrants for an existing event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/registrants",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "fedbc0873685cdc35cee16e81952306b",
+            "name": "Retrieve details for a specific event registrant",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/registrants\/{registrantId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "registrantId",
+                    "description": "Unique ID of the registrant you are retrieving",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "a8b5890cc942469deb5a0e075c1888e8",
+            "name": "Retrieve all promocodes for the specified event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "f5912a37d9b84035fc33b1e51d6f3500",
+            "name": "Create a new promocode for the specified event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "95cc82d3244f0010efa6d6cfb8e01bea",
+            "name": "Retrieve a specific promocode for an event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes\/{promocodeId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "promocodeId",
+                    "description": "Unique ID for the promocode",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "5f13fdab1d366ce342e36f52b35c8393",
+            "name": "Modify an existing promocode for the specified eve...",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes\/{promocodeId}",
+            "description": "Modify an existing promocode for the specified event",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "promocodeId",
+                    "description": "Unique ID for the promocode",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "16c47b9d4baf48dde1de0af3230edc43",
+            "name": "Delete an existing promocode for the specified eve...",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes\/{promocodeId}",
+            "description": "Delete an existing promocode for the specified event",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "promocodeId",
+                    "description": "Unique ID for the promocode",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "4778c2dfc086321c967fb675c182d797",
+            "name": "Create a new item for an event.",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "85e800fdd467984f3c854416bb7fda27",
+            "name": "Retrieve all existing items for a specific event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "d6f689cdb338d250042a62ee10ad1d84",
+            "name": "Retrieve a specific item for an event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemId",
+                    "description": "Unique ID of the item to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "0b085a978b3e6d06fccc7af6ba3dfc97",
+            "name": "Make changes to a specific item for an event",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemId",
+                    "description": "Unique ID of the item to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "6b65f4f2934acb38beebc6339063b598",
+            "name": "Delete an existing event item",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemId",
+                    "description": "Unique ID of the item to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "bb5278427bc08f83ebf2b5e66ea57ad1",
+            "name": "Create a new attribute for an item.",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemId",
+                    "description": "Unique ID of the item to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "523b362658c3b6e34c19735089669e39",
+            "name": "Retrieve all existing attributes for a specific it...",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes",
+            "description": "Retrieve all existing attributes for a specific item",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemId",
+                    "description": "Unique ID of the item to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "4a59cd74c7cbea28ec0462e30507114e",
+            "name": "Retrieve an existing item attribute",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes\/{attributeId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemId",
+                    "description": "Unique ID of the item to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attributeId",
+                    "description": "Unique ID of the attribute to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "9631afef29a5cd0010389bcdbefe9530",
+            "name": "Make changes to a specific item attribute",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes\/{attributeId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemId",
+                    "description": "Unique ID of the item to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attributeId",
+                    "description": "Unique ID of the attribute to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "46451fb7bf89f97fe0a4682170781596",
+            "name": "Delete an existing item attribute",
+            "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes\/{attributeId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "eventId",
+                    "description": "Specifies the event to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemId",
+                    "description": "Unique ID of the item to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attributeId",
+                    "description": "Unique ID of the attribute to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "cc7d75a5c8783dc2d2ca056d0b87b11c",
+            "name": "Retrieve MyLibrary usage information",
+            "url": "httpapi.constantcontact.com\/\/library\/info",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "b8d1aa6915aacde19e649423a8d95b9f",
+            "name": "Retrieve the account's MyLibrary folder collection...",
+            "url": "httpapi.constantcontact.com\/\/library\/folders",
+            "description": "Retrieve the account's MyLibrary folder collection.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_by",
+                    "description": "sort folder list by CREATED_DATE, CREATED_DATE_DESC, MODIFIED_DATE, MODIFIED_DATE_DESC, NAME, NAME_DESC",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d70b6fc460ae9db202938255760e76c",
+            "name": "Create a new MyLibrary folder.",
+            "url": "httpapi.constantcontact.com\/\/library\/folders",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "81ef25703e2373b6cf092469f90c8631",
+            "name": "Retrieve a specific MyLibrary folder",
+            "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folderId",
+                    "description": "Specifies the folder to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "5c3394f6787f328bb6bfd095f03e77e7",
+            "name": "Update an existing MyLibrary folder",
+            "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folderId",
+                    "description": "Specifies the folder to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "include_payload",
+                    "description": "Choose whether or not to return the updated folder JSON payload",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "aab7cf274e066165fed16e6e9dafe318",
+            "name": "Delete an existing MyLibrary folder",
+            "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folderId",
+                    "description": "Specifies the folder to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "6c4d11c29b283a74892a0d69b7efa53a",
+            "name": "Retrieve files in the Trash folder",
+            "url": "httpapi.constantcontact.com\/\/library\/folders\/trash\/files",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "type",
+                    "description": "Specifies the type of files to retrieve, ALL, IMAGES, or DOCUMENTS",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_by",
+                    "description": "sort folder list by CREATED_DATE, CREATED_DATE_DESC, MODIFIED_DATE, MODIFIED_DATE_DESC, NAME, NAME_DESC",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "e9d609f26be72205a453215137954c5e",
+            "name": "Delete all files in the Trash folder",
+            "url": "httpapi.constantcontact.com\/\/library\/folders\/trash\/files",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "c972037890a125a205cb609ea1a8ce1c",
+            "name": "Retrieve the account's MyLibrary folder collection...",
+            "url": "httpapi.constantcontact.com\/\/library\/files",
+            "description": "Retrieve the account's MyLibrary folder collection.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Specifies the type of files to retrieve, ALL, IMAGES, or DOCUMENTS",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "Specifies to retrieve files from a particular source: ALL, MyComputer, Facebook, Instagram, Shutterstock, or  Mobile",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "3747e392e67087e8e01d4806f96a9f33",
+            "name": "Retrieve a collection of files from a specific MyL...",
+            "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}\/files",
+            "description": "Retrieve a collection of files from a specific MyLibrary folder.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folderId",
+                    "description": "Specifies the folder to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Number of contacts to return per page, 1-500, default 50",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Specifies the type of files to retrieve, ALL, IMAGES, or DOCUMENTS",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "Specifies to retrieve files from a particular source: ALL, MyComputer, Facebook, Instagram, Shutterstock, or  Mobile",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d8a8a78d8d813cc51db13ce7baaf653",
+            "name": "Move one or more MyLibrary Files to a Specified Fo...",
+            "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}\/files",
+            "description": "Move one or more MyLibrary Files to a Specified Folder.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "folderId",
+                    "description": "Specifies the folder to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "c9cf5a9826c1869389f5f5c0777bb7e5",
+            "name": "Retrieve a specific MyLibrary file",
+            "url": "httpapi.constantcontact.com\/\/library\/files\/{fileId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fileId",
+                    "description": "Specifies the file to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "18c0eb79961319a677689dccd459951f",
+            "name": "Update an existing MyLibrary file",
+            "url": "httpapi.constantcontact.com\/\/library\/files\/{fileId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fileId",
+                    "description": "Specifies the file to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "include_payload",
+                    "description": "Choose whether or not to return the updated folder JSON payload",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "1e4b48ebf6e1ac5ad68baeba546a7786",
+            "name": "Delete an existing MyLibrary file",
+            "url": "httpapi.constantcontact.com\/\/library\/files\/{fileId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fileId",
+                    "description": "Specifies the file to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        },
+        {
+            "id": "33a54da087740ad53abe0b2888f77589",
+            "name": "Get the status of one or more file upload activiti...",
+            "url": "httpapi.constantcontact.com\/\/library\/files\/uploadstatus\/{fileId}",
+            "description": "Get the status of one or more file upload activities.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "fileId",
+                    "description": "Specifies the file to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "rawModeData": ""
+        }
+    ]
+}
