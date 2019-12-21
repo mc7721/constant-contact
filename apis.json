@@ -15,8 +15,8 @@
         "surveys",
         "webhook implementations"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/constant-contact\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -30,15 +30,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/constantcontact-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/constant-contact\/master\/constantcontact-openapi.json"
                 },
                 {
                     "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/constantcontact.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/constantcontact-postman-collection.json"
                 }
             ]
         },
@@ -52,15 +48,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/v2-appconnect-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/constant-contact\/master\/v2-appconnect-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/v2-appconnect-api.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/v2-appconnect-api-postman-collection.json"
                 }
             ]
         },
@@ -74,21 +66,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/constant-contact-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/constant-contact\/master\/constant-contact-openapi.json"
                 },
                 {
                     "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/constant-contact.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/constant-contact-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": ".NET LIbrary",
             "url": "https:\/\/github.com\/constantcontact\/.net-sdk"
