@@ -1,5 +1,5 @@
 {
-    "id": "a66b7f750321052aed9fd04fdb403b32",
+    "id": "d2d94517a909cd71f9be0d5c09cec0c2",
     "name": "v2 AppConnect API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "3a34447c74f5d4860c36a4172fa2c29a",
+            "id": "0056e5178ca31356e37fd99af11bcb66",
             "name": "Method to retrieve information about the account.",
             "url": "httpapi.constantcontact.com\/\/account\/info",
             "description": "",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "82f141c213f51b2c91d7b083ac4efdc2",
+            "id": "14bfc929a31eb20bfc7c3b4f3473db0f",
             "name": "Method to retrieve information about the account.",
             "url": "httpapi.constantcontact.com\/\/account\/info",
             "description": "",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "dccba20facff427307ac4b81908c8e06",
+            "id": "8092f1539190a8b8f2950dc51d72366b",
             "name": "Method to retrieve the list of email addresses ass...",
             "url": "httpapi.constantcontact.com\/\/account\/verifiedemailaddresses",
             "description": "Method to retrieve the list of email addresses associated with the account (not contact email addresses).",
@@ -83,11 +83,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "56773303591f66183ef74af8dc95dbb6",
+            "id": "6715e6118bb73ee8467cd4445893e3f3",
             "name": "Method to create a new email address associated wi...",
             "url": "httpapi.constantcontact.com\/\/account\/verifiedemailaddresses",
             "description": "Method to create a new email address associated with the account (not a contact email addresses).",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "30a65a8877895fc62e9739ffaf424064",
+            "id": "3cc807d346c41466dc191607bf5c5d58",
             "name": "Method for retrieving a list of contacts.",
             "url": "httpapi.constantcontact.com\/\/contacts",
             "description": "",
@@ -158,11 +158,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "acbe9f65ef1f9c101b6d75b58c18acb8",
+            "id": "361c890ee39b363fd2ccc81a440e7ddd",
             "name": "Method for adding a Contact to a collection.",
             "url": "httpapi.constantcontact.com\/\/contacts",
             "description": "",
@@ -189,11 +189,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "24e4c1bd5ad72b3d43ed9eb55bfd0056",
+            "id": "bee4a41c8404c611706b68252f67f3df",
             "name": "Method for returning a particular Contact using a ...",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}",
             "description": "Method for returning a particular Contact using a contact ID.",
@@ -220,11 +220,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "d644157748cb6b68e50dbd6b10a39a74",
+            "id": "ded23cbe8ae1ef77be57d282e65059ad",
             "name": "Modify a particular contact.",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}",
             "description": "",
@@ -258,11 +258,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "82ed4ff72c55cb5fae064ef5a0abfb19",
+            "id": "6e8c31b71b725f4185d76a50686b2aef",
             "name": "Deleting a Contact with a particular contactID.",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}",
             "description": "",
@@ -289,11 +289,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "0b32ccf36dbfb9a316a65dc8b054aee0",
+            "id": "935395f0821ae78fe24460c25af840a3",
             "name": "This collection method returns a list of ContactLi...",
             "url": "httpapi.constantcontact.com\/\/lists",
             "description": "This collection method returns a list of ContactLists.",
@@ -320,11 +320,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "97b95d32645922c384a82a80d5514e44",
+            "id": "3bc3ddd40e3d5439d4e14aa5f8cc8ce5",
             "name": "Method to create a ContactList.",
             "url": "httpapi.constantcontact.com\/\/lists",
             "description": "",
@@ -343,11 +343,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "b681397a38d9b8c47d57762751bcfdb2",
+            "id": "d9c52341ec0e607970ae8b9b79417bbf",
             "name": "Method to retrieve a ContactList specified by list...",
             "url": "httpapi.constantcontact.com\/\/lists\/{listId}",
             "description": "Method to retrieve a ContactList specified by listId.",
@@ -374,11 +374,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "8f491514641f67a42f4ab0c2b50ede14",
+            "id": "fc27280e51e1fa855f0dfdf887f59b43",
             "name": "Modify a ContactList",
             "url": "httpapi.constantcontact.com\/\/lists\/{listId}",
             "description": "",
@@ -405,11 +405,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "7e654dd9c5175b8ca643a21c7ba4cb7e",
+            "id": "e1a058956e0d92513231d3167bf057fe",
             "name": "Delete a ContactList",
             "url": "httpapi.constantcontact.com\/\/lists\/{listId}",
             "description": "",
@@ -436,11 +436,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "3df332228eae3730cc3eac57a6c0fff8",
+            "id": "cf2108c86632a23b2c72077d2a37e40b",
             "name": "This method returns a collection of contacts assoc...",
             "url": "httpapi.constantcontact.com\/\/lists\/{listId}\/contacts",
             "description": "This method returns a collection of contacts associated with a ContactList",
@@ -481,11 +481,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "9170866aaa867f8f69689e68877c8a67",
+            "id": "9966e77d691e8ef1fdc7640cffcdc66f",
             "name": "Method for getting all activities for a Contact",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking",
             "description": "",
@@ -526,11 +526,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "c394b3976112f90a1f87d88085377d81",
+            "id": "902c20f2ae0123042f02b13e41bcdcb5",
             "name": "Method for getting all activities sorted by campai...",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/reports\/summaryByCampaign",
             "description": "Method for getting all activities sorted by campaign",
@@ -557,11 +557,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "0057772b1c1015bf7d2ed1053a73736d",
+            "id": "f053f24a567e9744ff7cccc5aad49291",
             "name": "Get a list of all bounce activities for the contac...",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/bounces",
             "description": "Get a list of all bounce activities for the contact",
@@ -602,11 +602,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "016304e6008555dd645fab6282667918",
+            "id": "7ea98c6e628292fac36d3c22d3a3702d",
             "name": "Get a list of all click activities for the Contact...",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/clicks",
             "description": "Get a list of all click activities for the Contact",
@@ -647,11 +647,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "0d0b905894020f3787c9740e29b8401f",
+            "id": "beb7056970ad648d2227fdc5255a5689",
             "name": "Get a list of all forward activities for the Conta...",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/forwards",
             "description": "Get a list of all forward activities for the Contact",
@@ -692,11 +692,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "03b40cc2f3d40bb7de3585d27bdfa0dc",
+            "id": "dcf56e1a4e65ae6d2d42ffe43f5c7eca",
             "name": "Get a list of all open activities for the Contact",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/opens",
             "description": "",
@@ -737,11 +737,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "a81547808f6f413ebb9bf4c5c2c4d14a",
+            "id": "c7a9ce3e1c9815b81d86e4f021d87ac5",
             "name": "Get a list of all send activities for the Contact",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/sends",
             "description": "",
@@ -782,11 +782,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "04041b7df4732c83665224cf5b5de79a",
+            "id": "e32b78709150bd9c75976e3781b237dc",
             "name": "Get a list of all unsubscribe activities for the C...",
             "url": "httpapi.constantcontact.com\/\/contacts\/{contactId}\/tracking\/unsubscribes",
             "description": "Get a list of all unsubscribe activities for the Contact",
@@ -827,11 +827,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "109c5d753e41c042227247faca70160a",
+            "id": "ad32b9fc80ea2d1b3d02bb3cb915be9e",
             "name": "This collection method returns a list of email cam...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns",
             "description": "This collection method returns a list of email campaigns.",
@@ -872,11 +872,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "b7e8f3cf5a129ccb07adac6407bdbe51",
+            "id": "528cfe0c5ce552f17e37ca8c1ea87fb0",
             "name": "Method to create a Email Campaign.",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns",
             "description": "",
@@ -895,11 +895,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "e79b64a3e3a8ecabbb18c5ca2bc6a04e",
+            "id": "5332cc467ac51f3ab11e684487babeff",
             "name": "Method to retrieve a Email Campaign specified by c...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}",
             "description": "Method to retrieve a Email Campaign specified by campaignId",
@@ -926,11 +926,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "2b486d1fa4cb210c58e2a417a1186870",
+            "id": "4135f90527de31ee16bfbf0db99b945d",
             "name": "Method to retrieve a Email Campaign specified by c...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}",
             "description": "Method to retrieve a Email Campaign specified by campaignId",
@@ -957,11 +957,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "3d3d5b2bd5e4ca5c08d22bcbb8236dbf",
+            "id": "77c13c442e642b20d2c45997209b582d",
             "name": "Method to retrieve a Email Campaign specified by c...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}",
             "description": "Method to retrieve a Email Campaign specified by campaignId",
@@ -988,11 +988,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "c1863e6ee088b561b75a40dd1823ef88",
+            "id": "ecc9aab96ed35ec47f52e94f404a510d",
             "name": "Retrieve a preview of an email campaign specified ...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/preview",
             "description": "Retrieve a preview of an email campaign specified by campaignId",
@@ -1019,11 +1019,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "99ccc7cf1c250501aa105b5a0552078a",
+            "id": "e5da576f745db40be79dcece55afeeb4",
             "name": "Method for test sending a campaign.",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tests",
             "description": "",
@@ -1050,11 +1050,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "55c23794f746564fd7a67fea13312ec1",
+            "id": "acb88b196dea3688763efc401c6da711",
             "name": "Get a list of all bounce activities",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/bounces",
             "description": "",
@@ -1095,11 +1095,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "d46b3cc920294d36d14ef54e6cc3b0d7",
+            "id": "23cb2a13753d6e2ef91e5c19a68f8d12",
             "name": "Get a list of all click activities",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/clicks",
             "description": "",
@@ -1140,11 +1140,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "a154571a30649558eae22a19cc0ac76f",
+            "id": "be60ff6570fc85a0634bd028959a31fd",
             "name": "Get a list of all forward activities",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/forwards",
             "description": "",
@@ -1185,11 +1185,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "ee2ac3d2aa51f3ed49a1bf0edf7745ff",
+            "id": "b914482e745f4cb36bc264c021d24852",
             "name": "Get a list of all open activities",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/opens",
             "description": "",
@@ -1230,11 +1230,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "7b12a7c3a07b2aaa9bc7b7699e99b64c",
+            "id": "c74f58454818c38d0515b0f077ef0abe",
             "name": "Get a list of all send activities",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/sends",
             "description": "",
@@ -1275,11 +1275,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "d104180a2dce2f15fd8249374fc4b2cd",
+            "id": "24afd9a5e580c607d242aa82fb483e29",
             "name": "Get a summary of all activities for an email campa...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/reports\/summary",
             "description": "Get a summary of all activities for an email campaign",
@@ -1313,11 +1313,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "894d4454a3391d163ff9f7156b4b05e6",
+            "id": "b003ce122965f940f722b509ae6315b9",
             "name": "Get a list of all unsubscribe activity for an emai...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/unsubscribes",
             "description": "Get a list of all unsubscribe activity for an email campaign",
@@ -1358,11 +1358,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "5e75d553550c07b6649b046a55c7e806",
+            "id": "03560eab865b9d6455c31c5d24346849",
             "name": "Get a list of all the opt-out activities",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/tracking\/clicks\/{linkId}",
             "description": "",
@@ -1410,11 +1410,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "21136578711f7221b70b075762f1b4cf",
+            "id": "5821205f35ec3bbdeb2ebd54cccdfb29",
             "name": "This collection method returns a list of schedules...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules",
             "description": "This collection method returns a list of schedules for a campaign.",
@@ -1441,11 +1441,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "c6c6e61bafb459d78c2f6624fceba23f",
+            "id": "6b8515debdf17c629f3926225d9f3427",
             "name": "This is a method for creating an email campaign sc...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules",
             "description": "This is a method for creating an email campaign schedule.",
@@ -1472,11 +1472,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "2f2a4085cc781db38a0f3d093675a44e",
+            "id": "f21a541803bdee4770617b4740eeb41a",
             "name": "",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules\/{scheduleId}",
             "description": "",
@@ -1510,11 +1510,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "76a0b909c16f6b69b00fc7e17c7aee5d",
+            "id": "85ef53682eaa3340d95ac6d9d3102d0e",
             "name": "",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules\/{scheduleId}",
             "description": "",
@@ -1548,11 +1548,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "abbaaf17644fcf6b48fa6b8002b6b1b4",
+            "id": "1ad02d2b6808fa64e8dc75d3474a7a2f",
             "name": "This method deletes an existing schedule for an em...",
             "url": "httpapi.constantcontact.com\/\/emailmarketing\/campaigns\/{campaignId}\/schedules\/{scheduleId}",
             "description": "This method deletes an existing schedule for an email campaign.",
@@ -1586,11 +1586,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "a8d25d47fb282a0691fa4e0d4c03b328",
+            "id": "6cf6335dfb5297aa2b6ec255bce60fe0",
             "name": "Retrieve all EventSpot events in the account",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events",
             "description": "",
@@ -1617,11 +1617,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "268b77075adb52700a8c59d38cb1e4ff",
+            "id": "0cba87e7e5cb228e1f22796c9ae83728",
             "name": "Create a new EventSpot event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events",
             "description": "",
@@ -1640,11 +1640,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "7c46ad3c325a84f04ef910c5e217ac54",
+            "id": "9d616885dd47c74706b2994dc30dd408",
             "name": "Retrieve a specific event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}",
             "description": "",
@@ -1671,11 +1671,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "189d40a3beea6793a2752f899534938d",
+            "id": "06754d96d6ba4a390e0098933ea47fd1",
             "name": "Modify an existing event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}",
             "description": "",
@@ -1702,11 +1702,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "7799f08525d1b2365268e68a367b89b2",
+            "id": "182694f9dd68093852207647854b3474",
             "name": "Publish or Cancel an existing event using PATCH",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}",
             "description": "",
@@ -1733,11 +1733,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "ae56eabc097ef24ed583ae32e2ffbb2e",
+            "id": "c2505b76eae1c373b3d256ca53b2418e",
             "name": "Retrieve all fees for an existing event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees",
             "description": "",
@@ -1764,11 +1764,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "ed134e7fa63a520b34fe578781ae6773",
+            "id": "eb0bcc2cca5c6d83e9b0441edf4ef6fc",
             "name": "Create a new fee for an EventSpot event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees",
             "description": "",
@@ -1795,11 +1795,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "9e0f93df5f3ee570bd9e6b253fc415e9",
+            "id": "09d7c3f1359c74887cd318007d31e895",
             "name": "Retrieve an existing fee for a specific event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees\/{feeId}",
             "description": "",
@@ -1833,11 +1833,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "4fa37b63ff31c12aa793a0cbcca506c3",
+            "id": "287a68b6fc91d5eba396333ac43c85a7",
             "name": "Modify an existing event fee",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees\/{feeId}",
             "description": "",
@@ -1871,11 +1871,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "23b920b5586c58f420d3a738a4a41c23",
+            "id": "6e36e67c27821b596655c6aa206fd8d6",
             "name": "Delete an existing event fee",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/fees\/{feeId}",
             "description": "",
@@ -1909,11 +1909,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "f10057ec2a9e931778e139f0e687fbc4",
+            "id": "8927f3f3cfd72336ed97e7eb8638941d",
             "name": "Retrieve all registrants for an existing event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/registrants",
             "description": "",
@@ -1947,11 +1947,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "fedbc0873685cdc35cee16e81952306b",
+            "id": "57335b4951def93a2e6b084b12c1ab3f",
             "name": "Retrieve details for a specific event registrant",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/registrants\/{registrantId}",
             "description": "",
@@ -1985,11 +1985,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "a8b5890cc942469deb5a0e075c1888e8",
+            "id": "03e84ebdb7d29a19cbc5cabbf67b1e87",
             "name": "Retrieve all promocodes for the specified event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes",
             "description": "",
@@ -2016,11 +2016,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "f5912a37d9b84035fc33b1e51d6f3500",
+            "id": "8e8307bc6c1245f675a138d8600c446f",
             "name": "Create a new promocode for the specified event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes",
             "description": "",
@@ -2047,11 +2047,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "95cc82d3244f0010efa6d6cfb8e01bea",
+            "id": "8fa3c27fa1c8aac0adb85a195cc53584",
             "name": "Retrieve a specific promocode for an event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes\/{promocodeId}",
             "description": "",
@@ -2085,11 +2085,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "5f13fdab1d366ce342e36f52b35c8393",
+            "id": "233cf09adcb1411d4db799d2c3c27c10",
             "name": "Modify an existing promocode for the specified eve...",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes\/{promocodeId}",
             "description": "Modify an existing promocode for the specified event",
@@ -2123,11 +2123,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "16c47b9d4baf48dde1de0af3230edc43",
+            "id": "29427f327b1794bbc04dfcec173ba66c",
             "name": "Delete an existing promocode for the specified eve...",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/promocodes\/{promocodeId}",
             "description": "Delete an existing promocode for the specified event",
@@ -2161,11 +2161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "4778c2dfc086321c967fb675c182d797",
+            "id": "75d5ac01533834479826b9a477c421a6",
             "name": "Create a new item for an event.",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items",
             "description": "",
@@ -2192,11 +2192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "85e800fdd467984f3c854416bb7fda27",
+            "id": "25b42005b262e2dfbee090491ff9d213",
             "name": "Retrieve all existing items for a specific event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items",
             "description": "",
@@ -2223,11 +2223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "d6f689cdb338d250042a62ee10ad1d84",
+            "id": "70401184ca370e922fd65b039e217915",
             "name": "Retrieve a specific item for an event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}",
             "description": "",
@@ -2261,11 +2261,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "0b085a978b3e6d06fccc7af6ba3dfc97",
+            "id": "932de9d928c34fc82db0a459729f476d",
             "name": "Make changes to a specific item for an event",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}",
             "description": "",
@@ -2299,11 +2299,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "6b65f4f2934acb38beebc6339063b598",
+            "id": "ec7ab6010c290b4603f1013bfc781feb",
             "name": "Delete an existing event item",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}",
             "description": "",
@@ -2337,11 +2337,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "bb5278427bc08f83ebf2b5e66ea57ad1",
+            "id": "81cdcc2cbf7cec8ea5f828b0aac27148",
             "name": "Create a new attribute for an item.",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes",
             "description": "",
@@ -2375,11 +2375,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "523b362658c3b6e34c19735089669e39",
+            "id": "2631f0656ce2c65e40d45d33e1f8bb0f",
             "name": "Retrieve all existing attributes for a specific it...",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes",
             "description": "Retrieve all existing attributes for a specific item",
@@ -2413,11 +2413,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "4a59cd74c7cbea28ec0462e30507114e",
+            "id": "4e342e6f3b5171fecba58f9fb6a27697",
             "name": "Retrieve an existing item attribute",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes\/{attributeId}",
             "description": "",
@@ -2458,11 +2458,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "9631afef29a5cd0010389bcdbefe9530",
+            "id": "ab409cafd0676719027d97ff0316978e",
             "name": "Make changes to a specific item attribute",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes\/{attributeId}",
             "description": "",
@@ -2503,11 +2503,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "46451fb7bf89f97fe0a4682170781596",
+            "id": "4e2f41e225869ea62e8a06d84ec5bca4",
             "name": "Delete an existing item attribute",
             "url": "httpapi.constantcontact.com\/\/eventspot\/events\/{eventId}\/items\/{itemId}\/attributes\/{attributeId}",
             "description": "",
@@ -2548,11 +2548,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "cc7d75a5c8783dc2d2ca056d0b87b11c",
+            "id": "b77037585ed419dfb6efb859762182d3",
             "name": "Retrieve MyLibrary usage information",
             "url": "httpapi.constantcontact.com\/\/library\/info",
             "description": "",
@@ -2571,11 +2571,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "b8d1aa6915aacde19e649423a8d95b9f",
+            "id": "24c51879fd00a8a0f2c319e87845ba08",
             "name": "Retrieve the account's MyLibrary folder collection...",
             "url": "httpapi.constantcontact.com\/\/library\/folders",
             "description": "Retrieve the account's MyLibrary folder collection.",
@@ -2609,11 +2609,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "1d70b6fc460ae9db202938255760e76c",
+            "id": "acb3aaa01519758e5deedf2370cc4c3b",
             "name": "Create a new MyLibrary folder.",
             "url": "httpapi.constantcontact.com\/\/library\/folders",
             "description": "",
@@ -2632,11 +2632,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "81ef25703e2373b6cf092469f90c8631",
+            "id": "00980b1b81ad88188fe119350a3770db",
             "name": "Retrieve a specific MyLibrary folder",
             "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}",
             "description": "",
@@ -2663,11 +2663,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "5c3394f6787f328bb6bfd095f03e77e7",
+            "id": "e49985455f3d0b065c55f6edc26dd79a",
             "name": "Update an existing MyLibrary folder",
             "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}",
             "description": "",
@@ -2701,11 +2701,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "aab7cf274e066165fed16e6e9dafe318",
+            "id": "723f11aa0f0dce86a391ce0b8db3c2c9",
             "name": "Delete an existing MyLibrary folder",
             "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}",
             "description": "",
@@ -2732,11 +2732,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "6c4d11c29b283a74892a0d69b7efa53a",
+            "id": "d1e85fde214161629aec86a3e8911ce1",
             "name": "Retrieve files in the Trash folder",
             "url": "httpapi.constantcontact.com\/\/library\/folders\/trash\/files",
             "description": "",
@@ -2777,11 +2777,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "e9d609f26be72205a453215137954c5e",
+            "id": "6267449b57f6e267b22f3106fd4b9828",
             "name": "Delete all files in the Trash folder",
             "url": "httpapi.constantcontact.com\/\/library\/folders\/trash\/files",
             "description": "",
@@ -2800,11 +2800,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "c972037890a125a205cb609ea1a8ce1c",
+            "id": "05cf4b7c718801d929506e7100eb9f11",
             "name": "Retrieve the account's MyLibrary folder collection...",
             "url": "httpapi.constantcontact.com\/\/library\/files",
             "description": "Retrieve the account's MyLibrary folder collection.",
@@ -2845,11 +2845,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "3747e392e67087e8e01d4806f96a9f33",
+            "id": "dc5262c602f8f6350a23d95a9921ac69",
             "name": "Retrieve a collection of files from a specific MyL...",
             "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}\/files",
             "description": "Retrieve a collection of files from a specific MyLibrary folder.",
@@ -2897,11 +2897,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "4d8a8a78d8d813cc51db13ce7baaf653",
+            "id": "653399dc54bf4140e8279df95bf7ab4a",
             "name": "Move one or more MyLibrary Files to a Specified Fo...",
             "url": "httpapi.constantcontact.com\/\/library\/folders\/{folderId}\/files",
             "description": "Move one or more MyLibrary Files to a Specified Folder.",
@@ -2928,11 +2928,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "c9cf5a9826c1869389f5f5c0777bb7e5",
+            "id": "9fdce621844e647fd5e68adfc7abf658",
             "name": "Retrieve a specific MyLibrary file",
             "url": "httpapi.constantcontact.com\/\/library\/files\/{fileId}",
             "description": "",
@@ -2959,11 +2959,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "18c0eb79961319a677689dccd459951f",
+            "id": "486196c840c9a8a160b8d899d42ea8f2",
             "name": "Update an existing MyLibrary file",
             "url": "httpapi.constantcontact.com\/\/library\/files\/{fileId}",
             "description": "",
@@ -2997,11 +2997,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "1e4b48ebf6e1ac5ad68baeba546a7786",
+            "id": "bfd145407fe0f253f0831d8083a32ad8",
             "name": "Delete an existing MyLibrary file",
             "url": "httpapi.constantcontact.com\/\/library\/files\/{fileId}",
             "description": "",
@@ -3028,11 +3028,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         },
         {
-            "id": "33a54da087740ad53abe0b2888f77589",
+            "id": "52669908b93de4497e9985cefb1c85e0",
             "name": "Get the status of one or more file upload activiti...",
             "url": "httpapi.constantcontact.com\/\/library\/files\/uploadstatus\/{fileId}",
             "description": "Get the status of one or more file upload activities.",
@@ -3059,7 +3059,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a66b7f750321052aed9fd04fdb403b32",
+            "collectionId": "d2d94517a909cd71f9be0d5c09cec0c2",
             "rawModeData": ""
         }
     ]
